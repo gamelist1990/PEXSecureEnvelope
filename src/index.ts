@@ -31,3 +31,17 @@ export async function open<T>(envelope: string, secret: string, context: string)
     return payload.value as T;
   } catch { throw new Error('Invalid or expired envelope'); }
 }
+
+export { generateAssetKey, sealAsset, openAsset } from './asset';
+export {
+  createTrafficClientHello,
+  acceptTrafficClientHello,
+  sealTraffic,
+  openTraffic,
+} from './traffic';
+export type {
+  TrafficHello,
+  TrafficWelcome,
+  TrafficKeys,
+  TrafficDirection,
+} from './traffic';

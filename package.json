@@ -1,1 +1,13 @@
-{"name":"@pexserver/secure-envelope","version":"1.0.0","type":"module","exports":"./src/index.ts","files":["src","README.md","LICENSE"],"scripts":{"test":"bun test"},"license":"MIT"}
+{
+  "name": "@pexserver/secure-envelope",
+  "version": "1.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./traffic": "./src/traffic.ts",
+    "./asset": "./src/asset.ts"
+  },
+  "files": ["src", "README.md", "LICENSE"],
+  "scripts": { "test": "bun test" },
+  "license": "MIT"
+}
